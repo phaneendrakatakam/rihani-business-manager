@@ -1,0 +1,1572 @@
+/* =========================================================
+   RIHANI BUSINESS MANAGER
+   Main Application Styles
+   ========================================================= */
+
+/* =========================================================
+   GLOBAL
+   ========================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
+
+  background: #eef2f7;
+  color: #182235;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+input,
+select,
+textarea {
+  outline: none;
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.header {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 82px;
+
+  background: #ffffff;
+
+  display: flex;
+  align-items: center;
+
+  padding: 6px 28px;
+
+  border-bottom: 1px solid #e5e7eb;
+
+  z-index: 1000;
+
+  box-shadow:
+    0 2px 8px rgba(15, 23, 42, 0.06);
+}
+
+/* =========================================================
+   RIHANI CREATIONS BRAND
+   ========================================================= */
+
+.header-brand {
+  width: 170px;
+
+  height: 70px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  flex-shrink: 0;
+
+  line-height: 1;
+
+  overflow: visible;
+}
+
+/* Main Rihani text */
+
+.brand-rihani {
+  font-family:
+    "Brush Script MT",
+    "Segoe Script",
+    "Lucida Handwriting",
+    cursive;
+
+  font-size: 52px;
+
+  font-weight: 500;
+
+  font-style: italic;
+
+  color: #064b32;
+
+  white-space: nowrap;
+
+  line-height: 0.85;
+
+  letter-spacing: -2px;
+
+  position: relative;
+
+  z-index: 2;
+}
+
+/* CREATIONS underneath */
+
+.brand-creations {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 7px;
+
+  margin-top: 7px;
+
+  color: #c79522;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 12px;
+
+  font-weight: 500;
+
+  letter-spacing: 4px;
+
+  white-space: nowrap;
+
+  line-height: 1;
+}
+
+.brand-line {
+  display: block;
+
+  width: 18px;
+
+  height: 1px;
+
+  background: #c79522;
+
+  flex-shrink: 0;
+}
+
+/* =========================================================
+   HEADER DIVIDER
+   ========================================================= */
+
+.header-divider {
+  width: 1px;
+
+  height: 42px;
+
+  background: #6b7280;
+
+  margin-left: 22px;
+
+  margin-right: 25px;
+
+  flex-shrink: 0;
+}
+
+/* =========================================================
+   HEADER TITLE
+   ========================================================= */
+
+.header-title {
+  font-size: 30px;
+
+  font-weight: 600;
+
+  color: #1f2937;
+
+  white-space: nowrap;
+
+  line-height: 1;
+}
+
+/* =========================================================
+   SIDEBAR
+   ========================================================= */
+
+.sidebar {
+  position: fixed;
+
+  top: 82px;
+  left: 0;
+  bottom: 0;
+
+  width: 270px;
+
+  background: #111827;
+
+  color: #ffffff;
+
+  padding: 28px 22px;
+
+  overflow-y: auto;
+
+  z-index: 900;
+}
+
+.sidebar h2,
+.sidebar h3 {
+  margin-top: 0;
+}
+
+.sidebar-title {
+  font-size: 20px;
+
+  font-weight: 700;
+
+  margin-bottom: 25px;
+}
+
+.sidebar nav {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.sidebar a {
+  text-decoration: none;
+
+  color: #cbd5e1;
+
+  padding: 13px 15px;
+
+  border-radius: 10px;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.sidebar a:hover {
+  background: #273449;
+
+  color: #ffffff;
+}
+
+.sidebar a.active {
+  background: #3b4659;
+
+  color: #ffffff;
+
+  border-left: 4px solid #ffffff;
+}
+
+/* =========================================================
+   MAIN CONTENT
+   ========================================================= */
+
+.main {
+  margin-left: 270px;
+
+  padding-top: 82px;
+
+  min-height: calc(100vh - 82px);
+
+  background: #eef2f7;
+}
+
+/* =========================================================
+   COMMON PAGE
+   ========================================================= */
+
+.dashboard-page,
+.purchases-page,
+.orders-page,
+.reports-page,
+.settings-page {
+  padding: 38px 42px 80px;
+
+  max-width: 1500px;
+
+  margin: 0 auto;
+}
+
+/* =========================================================
+   PAGE HEADER
+   ========================================================= */
+
+.page-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 25px;
+
+  margin-bottom: 30px;
+}
+
+.page-header h1 {
+  margin: 0 0 6px;
+
+  font-size: 34px;
+
+  font-weight: 700;
+
+  color: #172033;
+}
+
+.page-header p {
+  margin: 0;
+
+  font-size: 16px;
+
+  color: #6b7280;
+}
+
+/* =========================================================
+   DASHBOARD
+   ========================================================= */
+
+.dashboard-page {
+  text-align: center;
+}
+
+.dashboard-page .page-header {
+  display: block;
+}
+
+.dashboard-page .page-header h1 {
+  font-size: 40px;
+}
+
+.dashboard-page .page-header p {
+  font-size: 17px;
+}
+
+/* =========================================================
+   DASHBOARD CARDS
+   ========================================================= */
+
+.dashboard-cards {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 24px;
+
+  margin-bottom: 38px;
+}
+
+.card {
+  background: #ffffff;
+
+  border-radius: 18px;
+
+  padding: 28px 22px;
+
+  min-height: 150px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  box-shadow:
+    0 6px 20px rgba(15, 23, 42, 0.08);
+
+  border: 1px solid #edf0f4;
+}
+
+.card h3 {
+  margin: 0 0 18px;
+
+  color: #6b7280;
+
+  font-size: 18px;
+
+  font-weight: 600;
+
+  text-align: center;
+}
+
+.card h2 {
+  margin: 0;
+
+  color: #182235;
+
+  font-size: 32px;
+
+  font-weight: 700;
+
+  text-align: center;
+}
+
+/* =========================================================
+   TASKS
+   ========================================================= */
+
+.tasks-section {
+  margin-top: 30px;
+
+  background: #ffffff;
+
+  border-radius: 18px;
+
+  padding: 30px;
+
+  box-shadow:
+    0 6px 20px rgba(15, 23, 42, 0.06);
+}
+
+.tasks-section h2 {
+  margin-top: 0;
+}
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.add-purchase-button {
+  border: none;
+
+  background: #172033;
+
+  color: #ffffff;
+
+  padding: 13px 22px;
+
+  border-radius: 9px;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  transition:
+    background 0.2s ease,
+    transform 0.15s ease;
+}
+
+.add-purchase-button:hover {
+  background: #26334a;
+}
+
+.add-purchase-button:active {
+  transform: translateY(1px);
+}
+
+/* =========================================================
+   FORM CARD
+   ========================================================= */
+
+.purchase-form-card {
+  background: #ffffff;
+
+  border-radius: 18px;
+
+  padding: 32px;
+
+  margin-bottom: 35px;
+
+  box-shadow:
+    0 8px 25px rgba(15, 23, 42, 0.08);
+
+  border: 1px solid #e8ecf1;
+}
+
+.purchase-form-card > h2 {
+  margin: 0 0 30px;
+
+  text-align: center;
+
+  color: #172033;
+
+  font-size: 25px;
+}
+
+/* =========================================================
+   FORM GROUP
+   ========================================================= */
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-group label {
+  display: block;
+
+  margin-bottom: 9px;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  color: #26334a;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+
+  border: 1px solid #d1d8e2;
+
+  background: #ffffff;
+
+  color: #182235;
+
+  border-radius: 9px;
+
+  padding: 13px 15px;
+
+  font-size: 15px;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.form-group input,
+.form-group select {
+  min-height: 48px;
+}
+
+.form-group textarea {
+  min-height: 110px;
+
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #64748b;
+
+  box-shadow:
+    0 0 0 3px rgba(100, 116, 139, 0.12);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #9ca3af;
+}
+
+.form-group p {
+  color: #6b7280;
+
+  margin: 8px 0;
+}
+
+/* =========================================================
+   ADD CUSTOMER
+   ========================================================= */
+
+.add-customer-button {
+  width: 100%;
+
+  border: none;
+
+  background: #707070;
+
+  color: #ffffff;
+
+  padding: 9px 14px;
+
+  border-radius: 0 0 4px 4px;
+
+  font-size: 15px;
+
+  transition: background 0.2s ease;
+}
+
+.add-customer-button:hover {
+  background: #555555;
+}
+
+/* =========================================================
+   NEW CUSTOMER BOX
+   ========================================================= */
+
+.new-customer-box {
+  background: #f8fafc;
+
+  border: 1px solid #dbe2ea;
+
+  border-radius: 12px;
+
+  padding: 22px;
+
+  margin-bottom: 25px;
+}
+
+.new-customer-box h3 {
+  margin-top: 0;
+
+  margin-bottom: 22px;
+
+  color: #172033;
+}
+
+/* =========================================================
+   FORM ACTIONS
+   ========================================================= */
+
+.form-actions {
+  display: flex;
+
+  justify-content: flex-end;
+
+  gap: 12px;
+
+  margin-top: 25px;
+}
+
+.cancel-button,
+.save-purchase-button {
+  border: none;
+
+  padding: 12px 20px;
+
+  border-radius: 8px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+.cancel-button {
+  background: #e5e7eb;
+
+  color: #374151;
+}
+
+.cancel-button:hover {
+  background: #d1d5db;
+}
+
+.save-purchase-button {
+  background: #172033;
+
+  color: #ffffff;
+}
+
+.save-purchase-button:hover {
+  background: #26334a;
+}
+
+/* =========================================================
+   PURCHASE / ORDER HISTORY
+   ========================================================= */
+
+.purchase-history {
+  background: #ffffff;
+
+  border-radius: 18px;
+
+  padding: 28px;
+
+  box-shadow:
+    0 6px 20px rgba(15, 23, 42, 0.06);
+
+  border: 1px solid #e8ecf1;
+
+  overflow-x: auto;
+}
+
+.purchase-history h2 {
+  margin: 0 0 22px;
+
+  font-size: 23px;
+
+  color: #172033;
+}
+
+.purchase-history > p {
+  color: #6b7280;
+}
+
+/* =========================================================
+   TABLE
+   ========================================================= */
+
+.purchase-history table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  min-width: 900px;
+}
+
+.purchase-history th {
+  background: #f8fafc;
+
+  color: #4b5563;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  text-align: left;
+
+  padding: 14px 12px;
+
+  border-bottom: 1px solid #e5e7eb;
+
+  white-space: nowrap;
+}
+
+.purchase-history td {
+  padding: 15px 12px;
+
+  border-bottom: 1px solid #edf0f4;
+
+  color: #374151;
+
+  font-size: 14px;
+
+  vertical-align: middle;
+}
+
+.purchase-history tbody tr:hover {
+  background: #fafbfc;
+}
+
+/* =========================================================
+   STATUS BADGES
+   ========================================================= */
+
+.status-badge {
+  display: inline-block;
+
+  padding: 5px 10px;
+
+  border-radius: 999px;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+.status-paid {
+  background: #dcfce7;
+
+  color: #166534;
+}
+
+.status-pending {
+  background: #fef3c7;
+
+  color: #92400e;
+}
+
+.status-completed {
+  background: #dcfce7;
+
+  color: #166534;
+}
+
+.status-progress {
+  background: #dbeafe;
+
+  color: #1d4ed8;
+}
+
+/* =========================================================
+   EDITED BADGE
+   ========================================================= */
+
+.edited-badge {
+  display: inline-block;
+
+  color: #b45309;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+/* =========================================================
+   TABLE ACTION BUTTONS
+   ========================================================= */
+
+.edit-purchase-button,
+.delete-purchase-button {
+  border: none;
+
+  padding: 7px 11px;
+
+  border-radius: 6px;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  margin-right: 6px;
+}
+
+.edit-purchase-button {
+  background: #e0e7ff;
+
+  color: #3730a3;
+}
+
+.edit-purchase-button:hover {
+  background: #c7d2fe;
+}
+
+.delete-purchase-button {
+  background: #fee2e2;
+
+  color: #b91c1c;
+}
+
+.delete-purchase-button:hover {
+  background: #fecaca;
+}
+
+/* =========================================================
+   DELETE MODAL
+   ========================================================= */
+
+.delete-modal-overlay {
+  position: fixed;
+
+  inset: 0;
+
+  background: rgba(15, 23, 42, 0.55);
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 20px;
+
+  z-index: 2000;
+}
+
+.delete-modal {
+  width: 100%;
+
+  max-width: 450px;
+
+  background: #ffffff;
+
+  border-radius: 18px;
+
+  padding: 32px;
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.2);
+
+  text-align: center;
+}
+
+.delete-modal-icon {
+  width: 48px;
+
+  height: 48px;
+
+  margin: 0 auto 18px;
+
+  border-radius: 50%;
+
+  background: #fee2e2;
+
+  color: #dc2626;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 25px;
+
+  font-weight: 700;
+}
+
+.delete-modal h2 {
+  margin: 0 0 10px;
+
+  color: #172033;
+}
+
+.delete-modal p {
+  color: #6b7280;
+
+  margin-bottom: 22px;
+}
+
+.delete-purchase-details {
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 15px;
+
+  padding: 15px;
+
+  background: #f8fafc;
+
+  border-radius: 9px;
+
+  margin-bottom: 25px;
+}
+
+.delete-purchase-details span {
+  font-weight: 700;
+}
+
+.delete-modal-actions {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 12px;
+}
+
+.modal-cancel-button,
+.modal-delete-button {
+  border: none;
+
+  padding: 11px 18px;
+
+  border-radius: 8px;
+
+  font-weight: 600;
+}
+
+.modal-cancel-button {
+  background: #e5e7eb;
+
+  color: #374151;
+}
+
+.modal-cancel-button:hover {
+  background: #d1d5db;
+}
+
+.modal-delete-button {
+  background: #dc2626;
+
+  color: #ffffff;
+}
+
+.modal-delete-button:hover {
+  background: #b91c1c;
+}
+
+/* =========================================================
+   SETTINGS
+   ========================================================= */
+
+.settings-page {
+  max-width: 1200px;
+}
+
+.settings-section {
+  background: #ffffff;
+
+  border-radius: 18px;
+
+  padding: 30px;
+
+  margin-bottom: 28px;
+
+  border: 1px solid #e8ecf1;
+
+  box-shadow:
+    0 6px 20px rgba(15, 23, 42, 0.06);
+}
+
+.settings-section-header {
+  margin-bottom: 25px;
+}
+
+.settings-section-header h2 {
+  margin: 0 0 7px;
+
+  font-size: 23px;
+
+  color: #172033;
+}
+
+.settings-section-header p {
+  margin: 0;
+
+  color: #6b7280;
+
+  font-size: 14px;
+}
+
+/* =========================================================
+   SETTINGS FORM
+   ========================================================= */
+
+.settings-form {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 22px;
+}
+
+.settings-form-group label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #374151;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+.settings-form-group input,
+.settings-form-group select {
+  width: 100%;
+
+  min-height: 46px;
+
+  padding: 12px 14px;
+
+  border: 1px solid #d1d8e2;
+
+  border-radius: 8px;
+
+  font-size: 14px;
+
+  color: #182235;
+
+  background: #ffffff;
+}
+
+.settings-form-group input:focus,
+.settings-form-group select:focus {
+  border-color: #64748b;
+
+  box-shadow:
+    0 0 0 3px rgba(100, 116, 139, 0.12);
+}
+
+/* =========================================================
+   SETTINGS SAVE
+   ========================================================= */
+
+.settings-save-area {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  margin-top: 25px;
+}
+
+.save-settings-button {
+  border: none;
+
+  background: #172033;
+
+  color: #ffffff;
+
+  padding: 12px 20px;
+
+  border-radius: 8px;
+
+  font-weight: 600;
+}
+
+.save-settings-button:hover {
+  background: #26334a;
+}
+
+.settings-success {
+  color: #15803d;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+/* =========================================================
+   BACKUP & RESTORE
+   ========================================================= */
+
+.backup-actions {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 22px;
+}
+
+.backup-card {
+  background: #f8fafc;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 13px;
+
+  padding: 24px;
+}
+
+.backup-card h3 {
+  margin: 0 0 10px;
+
+  color: #172033;
+}
+
+.backup-card p {
+  color: #6b7280;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+
+  margin-bottom: 20px;
+}
+
+.backup-button,
+.restore-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border: none;
+
+  background: #172033;
+
+  color: #ffffff;
+
+  padding: 11px 17px;
+
+  border-radius: 8px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.backup-button:hover,
+.restore-button:hover {
+  background: #26334a;
+}
+
+/* =========================================================
+   DANGER ZONE
+   ========================================================= */
+
+.danger-zone {
+  border: 1px solid #fecaca;
+
+  background: #fffafa;
+}
+
+.danger-card {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 25px;
+
+  padding: 22px;
+
+  border-radius: 12px;
+
+  background: #fff1f2;
+
+  border: 1px solid #fecdd3;
+}
+
+.danger-card h3 {
+  margin: 0 0 7px;
+
+  color: #991b1b;
+}
+
+.danger-card p {
+  margin: 0;
+
+  color: #7f1d1d;
+
+  font-size: 14px;
+}
+
+.clear-data-button {
+  flex-shrink: 0;
+
+  border: none;
+
+  background: #dc2626;
+
+  color: #ffffff;
+
+  padding: 11px 17px;
+
+  border-radius: 8px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+.clear-data-button:hover {
+  background: #b91c1c;
+}
+
+/* =========================================================
+   REPORTS
+   ========================================================= */
+
+.reports-page {
+  max-width: 1400px;
+}
+
+.report-section {
+  background: #ffffff;
+
+  border-radius: 18px;
+
+  padding: 28px;
+
+  margin-bottom: 25px;
+
+  border: 1px solid #e8ecf1;
+
+  box-shadow:
+    0 6px 20px rgba(15, 23, 42, 0.06);
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.footer {
+  position: fixed;
+
+  left: 270px;
+
+  right: 0;
+
+  bottom: 0;
+
+  height: 38px;
+
+  background: #1e293b;
+
+  color: #ffffff;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 13px;
+
+  z-index: 800;
+}
+
+/* =========================================================
+   SCROLLBAR
+   ========================================================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #eef2f7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c5ccd6;
+
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+  .dashboard-cards {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .sidebar {
+    width: 230px;
+  }
+
+  .main {
+    margin-left: 230px;
+  }
+
+  .footer {
+    left: 230px;
+  }
+
+  .header-brand {
+    width: 155px;
+  }
+
+  .brand-rihani {
+    font-size: 47px;
+  }
+
+  .brand-creations {
+    font-size: 11px;
+
+    letter-spacing: 3.5px;
+  }
+
+  .header-divider {
+    margin-left: 18px;
+
+    margin-right: 20px;
+  }
+
+  .header-title {
+    font-size: 27px;
+  }
+}
+
+/* =========================================================
+   TABLET / MOBILE
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+  .header {
+    height: 72px;
+
+    padding: 5px 15px;
+  }
+
+  .header-brand {
+    width: 140px;
+
+    height: 62px;
+  }
+
+  .brand-rihani {
+    font-size: 42px;
+  }
+
+  .brand-creations {
+    font-size: 9px;
+
+    letter-spacing: 3px;
+
+    gap: 5px;
+  }
+
+  .brand-line {
+    width: 13px;
+  }
+
+  .header-divider {
+    height: 36px;
+
+    margin-left: 12px;
+
+    margin-right: 15px;
+  }
+
+  .header-title {
+    font-size: 22px;
+  }
+
+  .sidebar {
+    position: relative;
+
+    top: 0;
+
+    width: 100%;
+
+    height: auto;
+
+    padding: 12px 15px;
+  }
+
+  .sidebar nav {
+    flex-direction: row;
+
+    overflow-x: auto;
+  }
+
+  .sidebar a {
+    white-space: nowrap;
+  }
+
+  .main {
+    margin-left: 0;
+
+    padding-top: 72px;
+  }
+
+  .footer {
+    position: relative;
+
+    left: 0;
+
+    height: 42px;
+  }
+
+  .dashboard-page,
+  .purchases-page,
+  .orders-page,
+  .reports-page,
+  .settings-page {
+    padding: 25px 18px 60px;
+  }
+
+  .page-header {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .dashboard-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .settings-form,
+  .backup-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .danger-card {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 500px) {
+
+  .header {
+    height: 65px;
+
+    padding: 4px 12px;
+  }
+
+  .header-brand {
+    width: 115px;
+
+    height: 56px;
+  }
+
+  .brand-rihani {
+    font-size: 36px;
+
+    letter-spacing: -1.5px;
+  }
+
+  .brand-creations {
+    font-size: 8px;
+
+    letter-spacing: 2.5px;
+
+    margin-top: 6px;
+
+    gap: 4px;
+  }
+
+  .brand-line {
+    width: 10px;
+  }
+
+  .header-divider {
+    height: 32px;
+
+    margin-left: 8px;
+
+    margin-right: 10px;
+  }
+
+  .header-title {
+    font-size: 18px;
+  }
+
+  .main {
+    padding-top: 65px;
+  }
+
+  .purchase-form-card,
+  .purchase-history,
+  .settings-section {
+    padding: 20px;
+  }
+
+  .form-actions,
+  .delete-modal-actions {
+    flex-direction: column;
+  }
+
+  .cancel-button,
+  .save-purchase-button,
+  .modal-cancel-button,
+  .modal-delete-button {
+    width: 100%;
+  }
+
+  .settings-save-area {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+}
