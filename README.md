@@ -133,27 +133,30 @@ rihani-business-manager/
 
 ## 📸 Screenshots
 
-Screenshots of the application will be added here.
 
 ### Dashboard
 
-Coming soon.
+<img width="1907" height="878" alt="Dashboard" src="https://github.com/user-attachments/assets/a40be6b2-fa9e-4f51-a37d-33d09dbbf6d9" />
+
 
 ### Orders
+<img width="1907" height="876" alt="Orders" src="https://github.com/user-attachments/assets/c7f5642e-9f33-4c21-bd0c-b854d11a4256" />
 
-Coming soon.
 
 ### Purchases
 
-Coming soon.
+<img width="1885" height="872" alt="Purchases" src="https://github.com/user-attachments/assets/7e089036-4b23-43ad-bd2c-7c1c580856d6" />
+
 
 ### Reports
 
-Coming soon.
+<img width="1912" height="878" alt="Reports" src="https://github.com/user-attachments/assets/40d0f687-7010-46a7-b653-7800cb0a4169" />
+
 
 ### Settings
 
-Coming soon.
+<img width="1907" height="872" alt="Settings" src="https://github.com/user-attachments/assets/e5458481-4b02-4b28-9013-c26b50cd9842" />
+
 
 ---
 
